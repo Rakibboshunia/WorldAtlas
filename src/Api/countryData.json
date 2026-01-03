@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "countryaName": "Bangladesh",
+    "capital": "Dhaka",
+    "population": "173 million",
+    "interestingFact": "Bangladesh has the world's longest natural sea beach at Cox's Bazar."
+  },
+  {
+    "id": 2,
+    "countryaName": "India",
+    "capital": "New Delhi",
+    "population": "1.43 billion",
+    "interestingFact": "India is the largest democracy in the world."
+  },
+  {
+    "id": 3,
+    "countryaName": "United States",
+    "capital": "Washington, D.C.",
+    "population": "331 million",
+    "interestingFact": "The United States has no official national language."
+  },
+  {
+    "id": 4,
+    "countryaName": "Japan",
+    "capital": "Tokyo",
+    "population": "125 million",
+    "interestingFact": "Japan has more than 6,800 islands."
+  },
+  {
+    "id": 5,
+    "countryaName": "Germany",
+    "capital": "Berlin",
+    "population": "83 million",
+    "interestingFact": "Germany is home to over 20,000 castles."
+  },
+  {
+    "id": 6,
+    "countryaName": "Brazil",
+    "capital": "Brasília",
+    "population": "216 million",
+    "interestingFact": "Brazil contains about 60% of the Amazon Rainforest."
+  },
+  {
+    "id": 7,
+    "countryaName": "Canada",
+    "capital": "Ottawa",
+    "population": "38 million",
+    "interestingFact": "Canada has more lakes than the rest of the world combined."
+  },
+  {
+    "id": 8,
+    "countryaName": "Australia",
+    "capital": "Canberra",
+    "population": "26 million",
+    "interestingFact": "Australia is wider than the Moon."
+  },
+  {
+    "id": 9,
+    "countryaName": "France",
+    "capital": "Paris",
+    "population": "65 million",
+    "interestingFact": "France is the most visited country in the world."
+  }
+]
