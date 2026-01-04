@@ -1,3 +1,4 @@
+
 import { FaLongArrowAltRight } from "react-icons/fa";
 import banner from "../../assets/images/world.png";
 
