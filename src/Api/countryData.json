@@ -1,66 +1,1325 @@
-
 [
   {
     "id": 1,
-    "countryaName": "Bangladesh",
-    "capital": "Dhaka",
-    "population": "173 million",
-    "interestingFact": "Bangladesh has the world's longest natural sea beach at Cox's Bazar."
+    "countryName": "Afghanistan",
+    "capital": "Kabul",
+    "population": "41 million",
+    "interestingFact": "Afghanistan has been a major trade route since ancient times."
   },
   {
     "id": 2,
-    "countryaName": "India",
-    "capital": "New Delhi",
-    "population": "1.43 billion",
-    "interestingFact": "India is the largest democracy in the world."
+    "countryName": "Albania",
+    "capital": "Tirana",
+    "population": "2.8 million",
+    "interestingFact": "Albania has more bunkers than McDonald's outlets."
   },
   {
     "id": 3,
-    "countryaName": "United States",
-    "capital": "Washington, D.C.",
-    "population": "331 million",
-    "interestingFact": "The United States has no official national language."
+    "countryName": "Algeria",
+    "capital": "Algiers",
+    "population": "45 million",
+    "interestingFact": "Algeria is the largest country in Africa."
   },
   {
     "id": 4,
-    "countryaName": "Japan",
-    "capital": "Tokyo",
-    "population": "125 million",
-    "interestingFact": "Japan has more than 6,800 islands."
+    "countryName": "Andorra",
+    "capital": "Andorra la Vella",
+    "population": "77 thousand",
+    "interestingFact": "Andorra has no airport or railway station."
   },
   {
     "id": 5,
-    "countryaName": "Germany",
-    "capital": "Berlin",
-    "population": "83 million",
-    "interestingFact": "Germany is home to over 20,000 castles."
+    "countryName": "Angola",
+    "capital": "Luanda",
+    "population": "35 million",
+    "interestingFact": "Angola is one of Africa’s top oil producers."
   },
   {
     "id": 6,
-    "countryaName": "Brazil",
-    "capital": "Brasília",
-    "population": "216 million",
-    "interestingFact": "Brazil contains about 60% of the Amazon Rainforest."
+    "countryName": "Antigua and Barbuda",
+    "capital": "Saint John's",
+    "population": "93 thousand",
+    "interestingFact": "This country has 365 beaches."
   },
   {
     "id": 7,
-    "countryaName": "Canada",
-    "capital": "Ottawa",
-    "population": "38 million",
-    "interestingFact": "Canada has more lakes than the rest of the world combined."
+    "countryName": "Argentina",
+    "capital": "Buenos Aires",
+    "population": "46 million",
+    "interestingFact": "Argentina is the birthplace of tango."
   },
   {
     "id": 8,
-    "countryaName": "Australia",
+    "countryName": "Armenia",
+    "capital": "Yerevan",
+    "population": "3 million",
+    "interestingFact": "Armenia was the first country to adopt Christianity."
+  },
+  {
+    "id": 9,
+    "countryName": "Australia",
     "capital": "Canberra",
     "population": "26 million",
     "interestingFact": "Australia is wider than the Moon."
   },
   {
-    "id": 9,
-    "countryaName": "France",
+    "id": 10,
+    "countryName": "Austria",
+    "capital": "Vienna",
+    "population": "9 million",
+    "interestingFact": "Vienna consistently ranks as one of the world’s most livable cities."
+  },
+  {
+    "id": 11,
+    "countryName": "Azerbaijan",
+    "capital": "Baku",
+    "population": "10 million",
+    "interestingFact": "Azerbaijan is known as the Land of Fire."
+  },
+  {
+    "id": 12,
+    "countryName": "Bahamas",
+    "capital": "Nassau",
+    "population": "400 thousand",
+    "interestingFact": "The Bahamas has the world’s third-largest barrier reef."
+  },
+  {
+    "id": 13,
+    "countryName": "Bahrain",
+    "capital": "Manama",
+    "population": "1.5 million",
+    "interestingFact": "Bahrain was one of the first Gulf states to discover oil."
+  },
+  {
+    "id": 14,
+    "countryName": "Bangladesh",
+    "capital": "Dhaka",
+    "population": "173 million",
+    "interestingFact": "Bangladesh has the longest natural sea beach at Cox’s Bazar."
+  },
+  {
+    "id": 15,
+    "countryName": "Barbados",
+    "capital": "Bridgetown",
+    "population": "287 thousand",
+    "interestingFact": "Barbados is the birthplace of rum."
+  },
+  {
+    "id": 16,
+    "countryName": "Belarus",
+    "capital": "Minsk",
+    "population": "9.3 million",
+    "interestingFact": "Over 40% of Belarus is forested."
+  },
+  {
+    "id": 17,
+    "countryName": "Belgium",
+    "capital": "Brussels",
+    "population": "11.6 million",
+    "interestingFact": "Belgium has three official languages."
+  },
+  {
+    "id": 18,
+    "countryName": "Belize",
+    "capital": "Belmopan",
+    "population": "410 thousand",
+    "interestingFact": "Belize is home to the Great Blue Hole."
+  },
+  {
+    "id": 19,
+    "countryName": "Benin",
+    "capital": "Porto-Novo",
+    "population": "13 million",
+    "interestingFact": "Benin is considered the birthplace of voodoo."
+  },
+  {
+    "id": 20,
+    "countryName": "Bhutan",
+    "capital": "Thimphu",
+    "population": "780 thousand",
+    "interestingFact": "Bhutan measures success using Gross National Happiness."
+  },
+  {
+    "id": 21,
+    "countryName": "Bolivia",
+    "capital": "Sucre",
+    "population": "12 million",
+    "interestingFact": "Bolivia has two official capitals."
+  },
+  {
+    "id": 22,
+    "countryName": "Bosnia and Herzegovina",
+    "capital": "Sarajevo",
+    "population": "3.2 million",
+    "interestingFact": "Sarajevo hosted the 1984 Winter Olympics."
+  },
+  {
+    "id": 23,
+    "countryName": "Botswana",
+    "capital": "Gaborone",
+    "population": "2.6 million",
+    "interestingFact": "Botswana has one of the world’s largest elephant populations."
+  },
+  {
+    "id": 24,
+    "countryName": "Brazil",
+    "capital": "Brasília",
+    "population": "216 million",
+    "interestingFact": "Brazil contains about 60% of the Amazon Rainforest."
+  },
+  {
+    "id": 25,
+    "countryName": "Brunei",
+    "capital": "Bandar Seri Begawan",
+    "population": "460 thousand",
+    "interestingFact": "Brunei is one of the richest countries per capita."
+  },
+  {
+    "id": 26,
+    "countryName": "Bulgaria",
+    "capital": "Sofia",
+    "population": "6.8 million",
+    "interestingFact": "Bulgaria is one of the oldest countries in Europe."
+  },
+  {
+    "id": 27,
+    "countryName": "Burkina Faso",
+    "capital": "Ouagadougou",
+    "population": "23 million",
+    "interestingFact": "The name means 'Land of Honest People'."
+  },
+  {
+    "id": 28,
+    "countryName": "Burundi",
+    "capital": "Gitega",
+    "population": "13 million",
+    "interestingFact": "Burundi is one of the smallest countries in Africa."
+  },
+  {
+    "id": 29,
+    "countryName": "Cabo Verde",
+    "capital": "Praia",
+    "population": "600 thousand",
+    "interestingFact": "Cabo Verde is an island nation in the Atlantic Ocean."
+  },
+  {
+    "id": 30,
+    "countryName": "Cambodia",
+    "capital": "Phnom Penh",
+    "population": "17 million",
+    "interestingFact": "Home to the Angkor Wat temple complex."
+  },
+  {
+    "id": 31,
+    "countryName": "Cameroon",
+    "capital": "Yaoundé",
+    "population": "28 million",
+    "interestingFact": "Cameroon is called ‘Africa in Miniature’."
+  },
+  {
+    "id": 32,
+    "countryName": "Canada",
+    "capital": "Ottawa",
+    "population": "38 million",
+    "interestingFact": "Canada has more lakes than the rest of the world combined."
+  },
+  {
+    "id": 33,
+    "countryName": "Central African Republic",
+    "capital": "Bangui",
+    "population": "5.5 million",
+    "interestingFact": "It is rich in diamonds and gold."
+  },
+  {
+    "id": 34,
+    "countryName": "Chad",
+    "capital": "N'Djamena",
+    "population": "18 million",
+    "interestingFact": "Lake Chad has been shrinking rapidly."
+  },
+  {
+    "id": 35,
+    "countryName": "Chile",
+    "capital": "Santiago",
+    "population": "19 million",
+    "interestingFact": "Chile is one of the longest countries north to south."
+  },
+  {
+    "id": 36,
+    "countryName": "China",
+    "capital": "Beijing",
+    "population": "1.41 billion",
+    "interestingFact": "China has the largest population in the world."
+  },
+  {
+    "id": 37,
+    "countryName": "Colombia",
+    "capital": "Bogotá",
+    "population": "52 million",
+    "interestingFact": "Colombia produces most of the world’s emeralds."
+  },
+  {
+    "id": 38,
+    "countryName": "Comoros",
+    "capital": "Moroni",
+    "population": "900 thousand",
+    "interestingFact": "Comoros is an archipelago in the Indian Ocean."
+  },
+  {
+    "id": 39,
+    "countryName": "Costa Rica",
+    "capital": "San José",
+    "population": "5.2 million",
+    "interestingFact": "Costa Rica has no standing army."
+  },
+  {
+    "id": 40,
+    "countryName": "Croatia",
+    "capital": "Zagreb",
+    "population": "3.9 million",
+    "interestingFact": "The necktie originated in Croatia."
+  },
+  {
+    "id": 41,
+    "countryName": "Cuba",
+    "capital": "Havana",
+    "population": "11 million",
+    "interestingFact": "Cuba has one of the world’s highest literacy rates."
+  },
+  {
+    "id": 42,
+    "countryName": "Cyprus",
+    "capital": "Nicosia",
+    "population": "1.3 million",
+    "interestingFact": "Nicosia is the last divided capital in Europe."
+  },
+  {
+    "id": 43,
+    "countryName": "Czech Republic",
+    "capital": "Prague",
+    "population": "10.7 million",
+    "interestingFact": "Prague is known as the City of a Hundred Spires."
+  },
+  {
+    "id": 44,
+    "countryName": "Democratic Republic of the Congo",
+    "capital": "Kinshasa",
+    "population": "102 million",
+    "interestingFact": "It is the largest country in Sub-Saharan Africa."
+  },
+  {
+    "id": 45,
+    "countryName": "Denmark",
+    "capital": "Copenhagen",
+    "population": "5.9 million",
+    "interestingFact": "Denmark consistently ranks high in happiness."
+  },
+  {
+    "id": 46,
+    "countryName": "Djibouti",
+    "capital": "Djibouti",
+    "population": "1 million",
+    "interestingFact": "Djibouti lies at a strategic shipping route."
+  },
+  {
+    "id": 47,
+    "countryName": "Dominica",
+    "capital": "Roseau",
+    "population": "73 thousand",
+    "interestingFact": "Known as the ‘Nature Island of the Caribbean’."
+  },
+  {
+    "id": 48,
+    "countryName": "Dominican Republic",
+    "capital": "Santo Domingo",
+    "population": "11 million",
+    "interestingFact": "It shares the island of Hispaniola with Haiti."
+  },
+  {
+    "id": 49,
+    "countryName": "Ecuador",
+    "capital": "Quito",
+    "population": "18 million",
+    "interestingFact": "The equator runs through Ecuador."
+  },
+  {
+    "id": 50,
+    "countryName": "Egypt",
+    "capital": "Cairo",
+    "population": "110 million",
+    "interestingFact": "Egypt is home to the ancient pyramids."
+  },
+  {
+    "id": 51,
+    "countryName": "El Salvador",
+    "capital": "San Salvador",
+    "population": "6.5 million",
+    "interestingFact": "El Salvador is the smallest country in Central America."
+  },
+  {
+    "id": 52,
+    "countryName": "Equatorial Guinea",
+    "capital": "Malabo",
+    "population": "1.7 million",
+    "interestingFact": "It is the only African country where Spanish is an official language."
+  },
+  {
+    "id": 53,
+    "countryName": "Eritrea",
+    "capital": "Asmara",
+    "population": "3.6 million",
+    "interestingFact": "Asmara is known for its well-preserved Italian architecture."
+  },
+  {
+    "id": 54,
+    "countryName": "Estonia",
+    "capital": "Tallinn",
+    "population": "1.3 million",
+    "interestingFact": "Estonia is one of the most digitally advanced countries."
+  },
+  {
+    "id": 55,
+    "countryName": "Eswatini",
+    "capital": "Mbabane",
+    "population": "1.2 million",
+    "interestingFact": "Eswatini is one of the last remaining absolute monarchies."
+  },
+  {
+    "id": 56,
+    "countryName": "Ethiopia",
+    "capital": "Addis Ababa",
+    "population": "126 million",
+    "interestingFact": "Ethiopia follows its own calendar system."
+  },
+  {
+    "id": 57,
+    "countryName": "Fiji",
+    "capital": "Suva",
+    "population": "930 thousand",
+    "interestingFact": "Fiji is made up of over 300 islands."
+  },
+  {
+    "id": 58,
+    "countryName": "Finland",
+    "capital": "Helsinki",
+    "population": "5.6 million",
+    "interestingFact": "Finland has been ranked the happiest country in the world."
+  },
+  {
+    "id": 59,
+    "countryName": "France",
     "capital": "Paris",
     "population": "65 million",
     "interestingFact": "France is the most visited country in the world."
+  },
+  {
+    "id": 60,
+    "countryName": "Gabon",
+    "capital": "Libreville",
+    "population": "2.4 million",
+    "interestingFact": "Over 80% of Gabon is covered by rainforest."
+  },
+  {
+    "id": 61,
+    "countryName": "Gambia",
+    "capital": "Banjul",
+    "population": "2.8 million",
+    "interestingFact": "The Gambia is the smallest country on mainland Africa."
+  },
+  {
+    "id": 62,
+    "countryName": "Georgia",
+    "capital": "Tbilisi",
+    "population": "3.7 million",
+    "interestingFact": "Georgia is considered the birthplace of wine."
+  },
+  {
+    "id": 63,
+    "countryName": "Germany",
+    "capital": "Berlin",
+    "population": "83 million",
+    "interestingFact": "Germany is home to over 20,000 castles."
+  },
+  {
+    "id": 64,
+    "countryName": "Ghana",
+    "capital": "Accra",
+    "population": "34 million",
+    "interestingFact": "Ghana was the first African country to gain independence."
+  },
+  {
+    "id": 65,
+    "countryName": "Greece",
+    "capital": "Athens",
+    "population": "10.3 million",
+    "interestingFact": "Greece is known as the cradle of Western civilization."
+  },
+  {
+    "id": 66,
+    "countryName": "Grenada",
+    "capital": "St. George's",
+    "population": "125 thousand",
+    "interestingFact": "Grenada is known as the Spice Isle."
+  },
+  {
+    "id": 67,
+    "countryName": "Guatemala",
+    "capital": "Guatemala City",
+    "population": "18 million",
+    "interestingFact": "Guatemala is home to ancient Mayan ruins."
+  },
+  {
+    "id": 68,
+    "countryName": "Guinea",
+    "capital": "Conakry",
+    "population": "14 million",
+    "interestingFact": "Guinea has one of the world’s largest bauxite reserves."
+  },
+  {
+    "id": 69,
+    "countryName": "Guinea-Bissau",
+    "capital": "Bissau",
+    "population": "2.1 million",
+    "interestingFact": "It has an archipelago of over 80 islands."
+  },
+  {
+    "id": 70,
+    "countryName": "Guyana",
+    "capital": "Georgetown",
+    "population": "810 thousand",
+    "interestingFact": "Guyana is the only English-speaking country in South America."
+  },
+  {
+    "id": 71,
+    "countryName": "Haiti",
+    "capital": "Port-au-Prince",
+    "population": "11.5 million",
+    "interestingFact": "Haiti was the first independent Black republic."
+  },
+  {
+    "id": 72,
+    "countryName": "Honduras",
+    "capital": "Tegucigalpa",
+    "population": "10.7 million",
+    "interestingFact": "Honduras has part of the Mesoamerican Barrier Reef."
+  },
+  {
+    "id": 73,
+    "countryName": "Hungary",
+    "capital": "Budapest",
+    "population": "9.6 million",
+    "interestingFact": "Budapest is split by the Danube River."
+  },
+  {
+    "id": 74,
+    "countryName": "Iceland",
+    "capital": "Reykjavík",
+    "population": "390 thousand",
+    "interestingFact": "Iceland has no mosquitoes."
+  },
+  {
+    "id": 75,
+    "countryName": "Indonesia",
+    "capital": "Jakarta",
+    "population": "277 million",
+    "interestingFact": "Indonesia is the world’s largest island country."
+  },
+  {
+    "id": 76,
+    "countryName": "Iran",
+    "capital": "Tehran",
+    "population": "89 million",
+    "interestingFact": "Iran was formerly known as Persia."
+  },
+  {
+    "id": 77,
+    "countryName": "Iraq",
+    "capital": "Baghdad",
+    "population": "46 million",
+    "interestingFact": "Iraq is home to ancient Mesopotamian civilizations."
+  },
+  {
+    "id": 78,
+    "countryName": "Ireland",
+    "capital": "Dublin",
+    "population": "5.3 million",
+    "interestingFact": "Ireland has no snakes."
+  },
+  {
+    "id": 79,
+    "countryName": "Israel",
+    "capital": "Jerusalem",
+    "population": "9.8 million",
+    "interestingFact": "Jerusalem is sacred to three major religions."
+  },
+  {
+    "id": 80,
+    "countryName": "Italy",
+    "capital": "Rome",
+    "population": "59 million",
+    "interestingFact": "Italy has more UNESCO World Heritage Sites than any other country."
+  },
+  {
+    "id": 81,
+    "countryName": "Jamaica",
+    "capital": "Kingston",
+    "population": "2.8 million",
+    "interestingFact": "Jamaica is the birthplace of reggae music."
+  },
+  {
+    "id": 82,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": "125 million",
+    "interestingFact": "Japan has more than 6,800 islands."
+  },
+  {
+    "id": 83,
+    "countryName": "Jordan",
+    "capital": "Amman",
+    "population": "11.3 million",
+    "interestingFact": "Petra is one of the New Seven Wonders of the World."
+  },
+  {
+    "id": 84,
+    "countryName": "Kazakhstan",
+    "capital": "Astana",
+    "population": "20 million",
+    "interestingFact": "Kazakhstan is the world’s largest landlocked country."
+  },
+  {
+    "id": 85,
+    "countryName": "Kenya",
+    "capital": "Nairobi",
+    "population": "55 million",
+    "interestingFact": "Kenya is famous for its wildlife safaris."
+  },
+  {
+    "id": 86,
+    "countryName": "Kiribati",
+    "capital": "South Tarawa",
+    "population": "130 thousand",
+    "interestingFact": "Kiribati is one of the first countries to see a new day."
+  },
+  {
+    "id": 87,
+    "countryName": "Kuwait",
+    "capital": "Kuwait City",
+    "population": "4.3 million",
+    "interestingFact": "Kuwait has one of the highest GDPs per capita."
+  },
+  {
+    "id": 88,
+    "countryName": "Kyrgyzstan",
+    "capital": "Bishkek",
+    "population": "6.8 million",
+    "interestingFact": "Over 90% of Kyrgyzstan is mountainous."
+  },
+  {
+    "id": 89,
+    "countryName": "Laos",
+    "capital": "Vientiane",
+    "population": "7.6 million",
+    "interestingFact": "Laos is the only landlocked country in Southeast Asia."
+  },
+  {
+    "id": 90,
+    "countryName": "Latvia",
+    "capital": "Riga",
+    "population": "1.9 million",
+    "interestingFact": "Latvia has one of Europe’s widest waterfalls."
+  },
+  {
+    "id": 91,
+    "countryName": "Lebanon",
+    "capital": "Beirut",
+    "population": "5.5 million",
+    "interestingFact": "Lebanon has one of the oldest continuously inhabited cities."
+  },
+  {
+    "id": 92,
+    "countryName": "Lesotho",
+    "capital": "Maseru",
+    "population": "2.3 million",
+    "interestingFact": "Lesotho is the only country entirely above 1,000m elevation."
+  },
+  {
+    "id": 93,
+    "countryName": "Liberia",
+    "capital": "Monrovia",
+    "population": "5.4 million",
+    "interestingFact": "Liberia was founded by freed American slaves."
+  },
+  {
+    "id": 94,
+    "countryName": "Libya",
+    "capital": "Tripoli",
+    "population": "7 million",
+    "interestingFact": "Libya has vast desert landscapes."
+  },
+  {
+    "id": 95,
+    "countryName": "Liechtenstein",
+    "capital": "Vaduz",
+    "population": "39 thousand",
+    "interestingFact": "Liechtenstein is one of the world’s smallest countries."
+  },
+  {
+    "id": 96,
+    "countryName": "Lithuania",
+    "capital": "Vilnius",
+    "population": "2.8 million",
+    "interestingFact": "Lithuania was once Europe’s largest country."
+  },
+  {
+    "id": 97,
+    "countryName": "Luxembourg",
+    "capital": "Luxembourg",
+    "population": "660 thousand",
+    "interestingFact": "Luxembourg has one of the highest incomes per capita."
+  },
+  {
+    "id": 98,
+    "countryName": "Madagascar",
+    "capital": "Antananarivo",
+    "population": "30 million",
+    "interestingFact": "Over 90% of its wildlife is found nowhere else."
+  },
+  {
+    "id": 99,
+    "countryName": "Malawi",
+    "capital": "Lilongwe",
+    "population": "21 million",
+    "interestingFact": "Lake Malawi is one of Africa’s largest lakes."
+  },
+  {
+    "id": 100,
+    "countryName": "Malaysia",
+    "capital": "Kuala Lumpur",
+    "population": "34 million",
+    "interestingFact": "Malaysia has one of the tallest twin towers in the world."
+  },
+  {
+    "id": 101,
+    "countryName": "Maldives",
+    "capital": "Malé",
+    "population": "520 thousand",
+    "interestingFact": "Maldives is the world’s lowest-lying country."
+  },
+  {
+    "id": 102,
+    "countryName": "Mali",
+    "capital": "Bamako",
+    "population": "23 million",
+    "interestingFact": "Mali was once home to the powerful Mali Empire."
+  },
+  {
+    "id": 103,
+    "countryName": "Malta",
+    "capital": "Valletta",
+    "population": "540 thousand",
+    "interestingFact": "Valletta is one of the smallest capital cities in Europe."
+  },
+  {
+    "id": 104,
+    "countryName": "Marshall Islands",
+    "capital": "Majuro",
+    "population": "42 thousand",
+    "interestingFact": "It consists of 29 coral atolls."
+  },
+  {
+    "id": 105,
+    "countryName": "Mauritania",
+    "capital": "Nouakchott",
+    "population": "4.9 million",
+    "interestingFact": "Mauritania is mostly desert."
+  },
+  {
+    "id": 106,
+    "countryName": "Mauritius",
+    "capital": "Port Louis",
+    "population": "1.3 million",
+    "interestingFact": "Mauritius was the only known home of the dodo bird."
+  },
+  {
+    "id": 107,
+    "countryName": "Mexico",
+    "capital": "Mexico City",
+    "population": "129 million",
+    "interestingFact": "Mexico introduced chocolate to the world."
+  },
+  {
+    "id": 108,
+    "countryName": "Micronesia",
+    "capital": "Palikir",
+    "population": "115 thousand",
+    "interestingFact": "Micronesia consists of more than 600 islands."
+  },
+  {
+    "id": 109,
+    "countryName": "Moldova",
+    "capital": "Chișinău",
+    "population": "2.6 million",
+    "interestingFact": "Moldova has one of the largest wine cellars in the world."
+  },
+  {
+    "id": 110,
+    "countryName": "Monaco",
+    "capital": "Monaco",
+    "population": "39 thousand",
+    "interestingFact": "Monaco is the second smallest country in the world."
+  },
+  {
+    "id": 111,
+    "countryName": "Mongolia",
+    "capital": "Ulaanbaatar",
+    "population": "3.5 million",
+    "interestingFact": "Mongolia is the most sparsely populated country."
+  },
+  {
+    "id": 112,
+    "countryName": "Montenegro",
+    "capital": "Podgorica",
+    "population": "620 thousand",
+    "interestingFact": "Montenegro means ‘Black Mountain’."
+  },
+  {
+    "id": 113,
+    "countryName": "Morocco",
+    "capital": "Rabat",
+    "population": "37 million",
+    "interestingFact": "Morocco has both Atlantic and Mediterranean coastlines."
+  },
+  {
+    "id": 114,
+    "countryName": "Mozambique",
+    "capital": "Maputo",
+    "population": "34 million",
+    "interestingFact": "Mozambique has over 2,500 km of coastline."
+  },
+  {
+    "id": 115,
+    "countryName": "Myanmar",
+    "capital": "Naypyidaw",
+    "population": "55 million",
+    "interestingFact": "Myanmar was formerly known as Burma."
+  },
+  {
+    "id": 116,
+    "countryName": "Namibia",
+    "capital": "Windhoek",
+    "population": "2.7 million",
+    "interestingFact": "Namibia is home to the world’s oldest desert."
+  },
+  {
+    "id": 117,
+    "countryName": "Nauru",
+    "capital": "Yaren",
+    "population": "12 thousand",
+    "interestingFact": "Nauru is the smallest island nation."
+  },
+  {
+    "id": 118,
+    "countryName": "Nepal",
+    "capital": "Kathmandu",
+    "population": "30 million",
+    "interestingFact": "Nepal is home to Mount Everest."
+  },
+  {
+    "id": 119,
+    "countryName": "Netherlands",
+    "capital": "Amsterdam",
+    "population": "18 million",
+    "interestingFact": "About one-third of the country is below sea level."
+  },
+  {
+    "id": 120,
+    "countryName": "New Zealand",
+    "capital": "Wellington",
+    "population": "5.2 million",
+    "interestingFact": "New Zealand was the first country to give women the vote."
+  },
+  {
+    "id": 121,
+    "countryName": "Nicaragua",
+    "capital": "Managua",
+    "population": "6.9 million",
+    "interestingFact": "Nicaragua has two large freshwater lakes."
+  },
+  {
+    "id": 122,
+    "countryName": "Niger",
+    "capital": "Niamey",
+    "population": "27 million",
+    "interestingFact": "Niger is named after the Niger River."
+  },
+  {
+    "id": 123,
+    "countryName": "Nigeria",
+    "capital": "Abuja",
+    "population": "227 million",
+    "interestingFact": "Nigeria has the largest population in Africa."
+  },
+  {
+    "id": 124,
+    "countryName": "North Macedonia",
+    "capital": "Skopje",
+    "population": "2.1 million",
+    "interestingFact": "It was formerly part of Yugoslavia."
+  },
+  {
+    "id": 125,
+    "countryName": "Norway",
+    "capital": "Oslo",
+    "population": "5.5 million",
+    "interestingFact": "Norway has some of the world’s longest fjords."
+  },
+  {
+    "id": 126,
+    "countryName": "Oman",
+    "capital": "Muscat",
+    "population": "4.7 million",
+    "interestingFact": "Oman has a rich maritime history."
+  },
+  {
+    "id": 127,
+    "countryName": "Pakistan",
+    "capital": "Islamabad",
+    "population": "241 million",
+    "interestingFact": "Pakistan has the world’s second-highest mountain, K2."
+  },
+  {
+    "id": 128,
+    "countryName": "Palau",
+    "capital": "Ngerulmud",
+    "population": "18 thousand",
+    "interestingFact": "Palau is famous for its jellyfish lake."
+  },
+  {
+    "id": 129,
+    "countryName": "Panama",
+    "capital": "Panama City",
+    "population": "4.4 million",
+    "interestingFact": "The Panama Canal connects two oceans."
+  },
+  {
+    "id": 130,
+    "countryName": "Papua New Guinea",
+    "capital": "Port Moresby",
+    "population": "10 million",
+    "interestingFact": "It has over 800 languages."
+  },
+  {
+    "id": 131,
+    "countryName": "Paraguay",
+    "capital": "Asunción",
+    "population": "7.5 million",
+    "interestingFact": "Paraguay has two official languages."
+  },
+  {
+    "id": 132,
+    "countryName": "Peru",
+    "capital": "Lima",
+    "population": "34 million",
+    "interestingFact": "Peru is home to Machu Picchu."
+  },
+  {
+    "id": 133,
+    "countryName": "Philippines",
+    "capital": "Manila",
+    "population": "117 million",
+    "interestingFact": "The Philippines has over 7,600 islands."
+  },
+  {
+    "id": 134,
+    "countryName": "Poland",
+    "capital": "Warsaw",
+    "population": "38 million",
+    "interestingFact": "Poland has one of Europe’s largest castles."
+  },
+  {
+    "id": 135,
+    "countryName": "Portugal",
+    "capital": "Lisbon",
+    "population": "10 million",
+    "interestingFact": "Portugal is one of Europe’s oldest nations."
+  },
+  {
+    "id": 136,
+    "countryName": "Qatar",
+    "capital": "Doha",
+    "population": "2.9 million",
+    "interestingFact": "Qatar has one of the highest GDPs per capita."
+  },
+  {
+    "id": 137,
+    "countryName": "Romania",
+    "capital": "Bucharest",
+    "population": "19 million",
+    "interestingFact": "Romania is home to the legend of Dracula."
+  },
+  {
+    "id": 138,
+    "countryName": "Russia",
+    "capital": "Moscow",
+    "population": "146 million",
+    "interestingFact": "Russia is the largest country in the world by area."
+  },
+  {
+    "id": 139,
+    "countryName": "Rwanda",
+    "capital": "Kigali",
+    "population": "14 million",
+    "interestingFact": "Rwanda is known as the ‘Land of a Thousand Hills’."
+  },
+  {
+    "id": 140,
+    "countryName": "Saint Kitts and Nevis",
+    "capital": "Basseterre",
+    "population": "54 thousand",
+    "interestingFact": "It is the smallest UN member state."
+  },
+  {
+    "id": 141,
+    "countryName": "Saint Lucia",
+    "capital": "Castries",
+    "population": "180 thousand",
+    "interestingFact": "Saint Lucia has twin volcanic peaks."
+  },
+  {
+    "id": 142,
+    "countryName": "Saint Vincent and the Grenadines",
+    "capital": "Kingstown",
+    "population": "110 thousand",
+    "interestingFact": "It consists of 32 islands."
+  },
+  {
+    "id": 143,
+    "countryName": "Samoa",
+    "capital": "Apia",
+    "population": "225 thousand",
+    "interestingFact": "Samoa was the first country to see the new millennium."
+  },
+  {
+    "id": 144,
+    "countryName": "San Marino",
+    "capital": "San Marino",
+    "population": "34 thousand",
+    "interestingFact": "San Marino is one of the world’s oldest republics."
+  },
+  {
+    "id": 145,
+    "countryName": "Sao Tome and Principe",
+    "capital": "São Tomé",
+    "population": "230 thousand",
+    "interestingFact": "It lies near the equator."
+  },
+  {
+    "id": 146,
+    "countryName": "Saudi Arabia",
+    "capital": "Riyadh",
+    "population": "36 million",
+    "interestingFact": "Saudi Arabia has no permanent rivers."
+  },
+  {
+    "id": 147,
+    "countryName": "Senegal",
+    "capital": "Dakar",
+    "population": "18 million",
+    "interestingFact": "Senegal is famous for the Dakar Rally."
+  },
+  {
+    "id": 148,
+    "countryName": "Serbia",
+    "capital": "Belgrade",
+    "population": "6.6 million",
+    "interestingFact": "Belgrade is one of Europe’s oldest cities."
+  },
+  {
+    "id": 149,
+    "countryName": "Seychelles",
+    "capital": "Victoria",
+    "population": "100 thousand",
+    "interestingFact": "Seychelles has some of the world’s most beautiful beaches."
+  },
+  {
+    "id": 150,
+    "countryName": "Sierra Leone",
+    "capital": "Freetown",
+    "population": "8.6 million",
+    "interestingFact": "Freetown was founded for freed slaves."
+  },
+  {
+    "id": 151,
+    "countryName": "Singapore",
+    "capital": "Singapore",
+    "population": "5.9 million",
+    "interestingFact": "Singapore is one of the cleanest cities in the world."
+  },
+  {
+    "id": 152,
+    "countryName": "Slovakia",
+    "capital": "Bratislava",
+    "population": "5.4 million",
+    "interestingFact": "Slovakia has more castles per capita than any other country."
+  },
+  {
+    "id": 153,
+    "countryName": "Slovenia",
+    "capital": "Ljubljana",
+    "population": "2.1 million",
+    "interestingFact": "Over half of Slovenia is covered by forests."
+  },
+  {
+    "id": 154,
+    "countryName": "Solomon Islands",
+    "capital": "Honiara",
+    "population": "740 thousand",
+    "interestingFact": "The islands were named after King Solomon."
+  },
+  {
+    "id": 155,
+    "countryName": "Somalia",
+    "capital": "Mogadishu",
+    "population": "18 million",
+    "interestingFact": "Somalia has the longest coastline in mainland Africa."
+  },
+  {
+    "id": 156,
+    "countryName": "South Africa",
+    "capital": "Pretoria",
+    "population": "62 million",
+    "interestingFact": "South Africa has three capital cities."
+  },
+  {
+    "id": 157,
+    "countryName": "South Sudan",
+    "capital": "Juba",
+    "population": "11 million",
+    "interestingFact": "South Sudan is the world’s youngest country."
+  },
+  {
+    "id": 158,
+    "countryName": "Spain",
+    "capital": "Madrid",
+    "population": "48 million",
+    "interestingFact": "Spain has more bars than any other country."
+  },
+  {
+    "id": 159,
+    "countryName": "Sri Lanka",
+    "capital": "Sri Jayawardenepura Kotte",
+    "population": "22 million",
+    "interestingFact": "Sri Lanka was once called Ceylon."
+  },
+  {
+    "id": 160,
+    "countryName": "Sudan",
+    "capital": "Khartoum",
+    "population": "49 million",
+    "interestingFact": "Sudan has more pyramids than Egypt."
+  },
+  {
+    "id": 161,
+    "countryName": "Suriname",
+    "capital": "Paramaribo",
+    "population": "630 thousand",
+    "interestingFact": "Suriname is one of the most forested countries."
+  },
+  {
+    "id": 162,
+    "countryName": "Sweden",
+    "capital": "Stockholm",
+    "population": "10.6 million",
+    "interestingFact": "Sweden has over 100,000 lakes."
+  },
+  {
+    "id": 163,
+    "countryName": "Switzerland",
+    "capital": "Bern",
+    "population": "8.8 million",
+    "interestingFact": "Switzerland has remained neutral in wars."
+  },
+  {
+    "id": 164,
+    "countryName": "Syria",
+    "capital": "Damascus",
+    "population": "22 million",
+    "interestingFact": "Damascus is one of the oldest cities in the world."
+  },
+  {
+    "id": 165,
+    "countryName": "Tajikistan",
+    "capital": "Dushanbe",
+    "population": "10 million",
+    "interestingFact": "Over 90% of Tajikistan is mountainous."
+  },
+  {
+    "id": 166,
+    "countryName": "Tanzania",
+    "capital": "Dodoma",
+    "population": "67 million",
+    "interestingFact": "Mount Kilimanjaro is Africa’s highest peak."
+  },
+  {
+    "id": 167,
+    "countryName": "Thailand",
+    "capital": "Bangkok",
+    "population": "71 million",
+    "interestingFact": "Thailand was never colonized by a European power."
+  },
+  {
+    "id": 168,
+    "countryName": "Timor-Leste",
+    "capital": "Dili",
+    "population": "1.4 million",
+    "interestingFact": "It gained independence in 2002."
+  },
+  {
+    "id": 169,
+    "countryName": "Togo",
+    "capital": "Lomé",
+    "population": "8.8 million",
+    "interestingFact": "Togo is one of Africa’s smallest countries."
+  },
+  {
+    "id": 170,
+    "countryName": "Tonga",
+    "capital": "Nukuʻalofa",
+    "population": "105 thousand",
+    "interestingFact": "Tonga is the only Pacific nation never colonized."
+  },
+  {
+    "id": 171,
+    "countryName": "Trinidad and Tobago",
+    "capital": "Port of Spain",
+    "population": "1.4 million",
+    "interestingFact": "It is the birthplace of steelpan music."
+  },
+  {
+    "id": 172,
+    "countryName": "Tunisia",
+    "capital": "Tunis",
+    "population": "12 million",
+    "interestingFact": "Ancient Carthage was located here."
+  },
+  {
+    "id": 173,
+    "countryName": "Turkey",
+    "capital": "Ankara",
+    "population": "85 million",
+    "interestingFact": "Turkey spans both Europe and Asia."
+  },
+  {
+    "id": 174,
+    "countryName": "Turkmenistan",
+    "capital": "Ashgabat",
+    "population": "6.4 million",
+    "interestingFact": "It has a flaming natural gas crater."
+  },
+  {
+    "id": 175,
+    "countryName": "Tuvalu",
+    "capital": "Funafuti",
+    "population": "12 thousand",
+    "interestingFact": "Tuvalu is one of the smallest countries in the world."
+  },
+  {
+    "id": 176,
+    "countryName": "Uganda",
+    "capital": "Kampala",
+    "population": "49 million",
+    "interestingFact": "Uganda has half of the world’s mountain gorillas."
+  },
+  {
+    "id": 177,
+    "countryName": "Ukraine",
+    "capital": "Kyiv",
+    "population": "38 million",
+    "interestingFact": "Ukraine is known as the breadbasket of Europe."
+  },
+  {
+    "id": 178,
+    "countryName": "United Arab Emirates",
+    "capital": "Abu Dhabi",
+    "population": "10 million",
+    "interestingFact": "Home to the world’s tallest building."
+  },
+  {
+    "id": 179,
+    "countryName": "United Kingdom",
+    "capital": "London",
+    "population": "67 million",
+    "interestingFact": "The UK consists of four countries."
+  },
+  {
+    "id": 180,
+    "countryName": "United States",
+    "capital": "Washington, D.C.",
+    "population": "331 million",
+    "interestingFact": "The U.S. has no official national language."
+  },
+  {
+    "id": 181,
+    "countryName": "Uruguay",
+    "capital": "Montevideo",
+    "population": "3.5 million",
+    "interestingFact": "Uruguay was the first country to legalize marijuana."
+  },
+  {
+    "id": 182,
+    "countryName": "Uzbekistan",
+    "capital": "Tashkent",
+    "population": "36 million",
+    "interestingFact": "Uzbekistan lies on the ancient Silk Road."
+  },
+  {
+    "id": 183,
+    "countryName": "Vanuatu",
+    "capital": "Port Vila",
+    "population": "330 thousand",
+    "interestingFact": "Vanuatu has active volcanoes."
+  },
+  {
+    "id": 184,
+    "countryName": "Vatican City",
+    "capital": "Vatican City",
+    "population": "800",
+    "interestingFact": "Vatican City is the smallest country in the world."
+  },
+  {
+    "id": 185,
+    "countryName": "Venezuela",
+    "capital": "Caracas",
+    "population": "29 million",
+    "interestingFact": "Angel Falls is the world’s highest waterfall."
+  },
+  {
+    "id": 186,
+    "countryName": "Vietnam",
+    "capital": "Hanoi",
+    "population": "100 million",
+    "interestingFact": "Vietnam is one of the largest coffee exporters."
+  },
+  {
+    "id": 187,
+    "countryName": "Yemen",
+    "capital": "Sana'a",
+    "population": "34 million",
+    "interestingFact": "Sana'a is one of the oldest cities in the world."
+  },
+  {
+    "id": 188,
+    "countryName": "Zambia",
+    "capital": "Lusaka",
+    "population": "21 million",
+    "interestingFact": "Victoria Falls lies on its border."
+  },
+  {
+    "id": 189,
+    "countryName": "Zimbabwe",
+    "capital": "Harare",
+    "population": "16 million",
+    "interestingFact": "Home to the ruins of Great Zimbabwe."
   }
 ]

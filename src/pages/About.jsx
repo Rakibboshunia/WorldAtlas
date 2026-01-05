@@ -1,22 +1,22 @@
-import countryFact from "../Api/countryData.json";
+import countryFacts from "../api/countryData.json";
 
-const About = () => {
+export const About = () => {
   return (
     <section className="section-about container">
       <h2 className="container-title">
         Here are the Interesting Facts
         <br />
-        we're proud of
+        we’re proud of
       </h2>
 
       <div className="gradient-cards">
-        {countryFact.map((country) => {
-          const { id, countryaName, capital, population, interestingFact } =
+        {countryFacts.map((country) => {
+          const { id, countryName, capital, population, interestingFact } =
             country;
           return (
             <div className="card" key={id}>
               <div className="container-card bg-blue-box">
-                <p className="card-title">{countryaName}</p>
+                <p className="card-title">{countryName}</p>
                 <p>
                   <span className="card-description">Capital:</span>
                   {capital}
@@ -37,5 +37,3 @@ const About = () => {
     </section>
   );
 };
-
-export default About;

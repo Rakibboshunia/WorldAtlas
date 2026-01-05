@@ -1,17 +1,11 @@
-import HeroSection from "../components/UI/HeroSection"
-import About from "./About"
+import { HeroSection } from "../components/UI/HeroSection";
+import { About } from "./About";
 
-
-const Home = () => {
+export const Home = () => {
   return (
     <>
       <HeroSection />
-
       <About />
     </>
-      
-    
-  )
-}
-
-export default Home
+  );
+};
