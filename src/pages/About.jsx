@@ -1,3 +1,4 @@
+
 import countryFacts from "../api/countryData.json";
 
 export const About = () => {
