@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
+
 import { GiHamburgerMenu } from "react-icons/gi";
+
 import { useState } from "react";
 
 const Header = () => {
