@@ -1,3 +1,4 @@
+
 [
   {
     "id": 1,
@@ -6,6 +7,7 @@
     "population": "41 million",
     "interestingFact": "Afghanistan has been a major trade route since ancient times."
   },
+  
   {
     "id": 2,
     "countryName": "Albania",
@@ -13,6 +15,7 @@
     "population": "2.8 million",
     "interestingFact": "Albania has more bunkers than McDonald's outlets."
   },
+  
   {
     "id": 3,
     "countryName": "Algeria",
@@ -20,6 +23,7 @@
     "population": "45 million",
     "interestingFact": "Algeria is the largest country in Africa."
   },
+  
   {
     "id": 4,
     "countryName": "Andorra",
@@ -27,6 +31,7 @@
     "population": "77 thousand",
     "interestingFact": "Andorra has no airport or railway station."
   },
+  
   {
     "id": 5,
     "countryName": "Angola",
@@ -34,6 +39,7 @@
     "population": "35 million",
     "interestingFact": "Angola is one of Africa’s top oil producers."
   },
+  
   {
     "id": 6,
     "countryName": "Antigua and Barbuda",
@@ -41,6 +47,7 @@
     "population": "93 thousand",
     "interestingFact": "This country has 365 beaches."
   },
+  
   {
     "id": 7,
     "countryName": "Argentina",
@@ -48,6 +55,7 @@
     "population": "46 million",
     "interestingFact": "Argentina is the birthplace of tango."
   },
+  
   {
     "id": 8,
     "countryName": "Armenia",
@@ -55,6 +63,7 @@
     "population": "3 million",
     "interestingFact": "Armenia was the first country to adopt Christianity."
   },
+  
   {
     "id": 9,
     "countryName": "Australia",
@@ -62,6 +71,7 @@
     "population": "26 million",
     "interestingFact": "Australia is wider than the Moon."
   },
+  
   {
     "id": 10,
     "countryName": "Austria",
@@ -69,6 +79,7 @@
     "population": "9 million",
     "interestingFact": "Vienna consistently ranks as one of the world’s most livable cities."
   },
+  
   {
     "id": 11,
     "countryName": "Azerbaijan",
@@ -76,6 +87,7 @@
     "population": "10 million",
     "interestingFact": "Azerbaijan is known as the Land of Fire."
   },
+  
   {
     "id": 12,
     "countryName": "Bahamas",
@@ -84,6 +96,7 @@
     "interestingFact": "The Bahamas has the world’s third-largest barrier reef."
   },
   {
+    
     "id": 13,
     "countryName": "Bahrain",
     "capital": "Manama",
