@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
 import { useState, useEffect } from "react";
+import logo from "../../assets/images/logo.png";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -27,8 +28,7 @@ const Header = () => {
       <div className="container header-container">
         <div className="navbar-brand">
           <NavLink to="/" className="logo-link">
-            <span className="logo-icon">🌍</span>
-            <span className="logo-text">Geo<span className="logo-highlight">Pulse</span></span>
+            <img src={logo} alt="GeoPulse Logo" className="logo-image" style={{ height: "6rem", width: "auto" }} />
           </NavLink>
         </div>
 

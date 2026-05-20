@@ -1,4 +1,3 @@
-
 import footerContact from "../../api/footerApi.json";
 import { IoCallSharp } from "react-icons/io5";
 import { MdPlace } from "react-icons/md";
@@ -6,6 +5,7 @@ import { TbMailPlus } from "react-icons/tb";
 import { FaGithub, FaTwitter, FaLinkedinIn, FaDribbble } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import logo from "../../assets/images/logo.png";
 
 const Footer = () => {
   const footerIcon = {
@@ -26,8 +26,7 @@ const Footer = () => {
           {/* Brand & Socials */}
           <div className="footer-brand-section">
             <NavLink to="/" className="footer-logo">
-              <span className="logo-icon">🌍</span>
-              <span className="logo-text">Geo<span className="logo-highlight">Pulse</span></span>
+              <img src={logo} alt="GeoPulse Logo" className="logo-image" style={{ height: "6rem", width: "auto" }} />
             </NavLink>
             <p className="footer-description">
               Discover the history, culture, and beauty of every nation. Your ultimate guide to exploring the world, one country at a time.
