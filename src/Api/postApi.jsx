@@ -16,3 +16,10 @@ export const getCountryIndData = (name) => {
     `/name/${name}?fullText=true&fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags`
   );
 };
+
+// HTTP GET METHOD for multiple country codes (border countries)
+export const getCountriesByCodes = (codes) => {
+  return api.get(
+    `/alpha?codes=${codes.join(",")}&fields=name,flags`
+  );
+};
