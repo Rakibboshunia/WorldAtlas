@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { HeroSection } from "../components/UI/HeroSection";
 import { About } from "./About";
@@ -31,7 +30,6 @@ export const Home = () => {
   return (
     <>
       <HeroSection />
-
       {/* Premium Features Banner */}
       <section className="features-banner-section container">
         <div className="grid grid-three-cols">
