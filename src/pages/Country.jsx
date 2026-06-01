@@ -1,4 +1,3 @@
-
 import { useEffect, useState, useTransition } from "react";
 import { getCountryData } from "../api/postApi";
 import { Loader } from "../components/UI/Loader";
@@ -177,7 +176,7 @@ export const Country = () => {
                         </span>
                       );
                     }
-                    elements.push(
+                    elements. push(
                       <button
                         key={page}
                         onClick={() => handlePageChange(page)}
