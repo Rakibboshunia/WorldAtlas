@@ -1,4 +1,3 @@
-
 import toast from "react-hot-toast";
 import { useRef } from "react";
 import { FaPaperPlane } from "react-icons/fa";
@@ -32,7 +31,7 @@ export const Contact = () => {
           <input
             type="text"
             className="form-control"
-            placeholder="Enter your name"
+            placeholder="Enter your name."
             name="username"
             required
             autoComplete="off"
@@ -41,7 +40,7 @@ export const Contact = () => {
           <input
             type="email"
             className="form-control"
-            placeholder="Enter your email"
+            placeholder="Enter your email."
             name="email"
             required
             autoComplete="off"
@@ -50,7 +49,7 @@ export const Contact = () => {
           <textarea
             className="form-control"
             rows="8"
-            placeholder="Enter your message"
+            placeholder="Enter your message."
             name="message"
             required
             autoComplete="off"
