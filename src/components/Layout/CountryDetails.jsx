@@ -1,4 +1,3 @@
-
 import { useEffect, useState, useTransition } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { getCountryIndData, getCountriesByCodes } from "../../api/postApi";
