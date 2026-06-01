@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import countryFacts from "../api/countryData.json";
 import { motion } from "framer-motion";
@@ -31,7 +30,7 @@ export const About = () => {
       <h2 className="container-title">
         Here are the Interesting Facts
         <br />
-        we’re proud of
+        We’re proud of
       </h2>
 
       {/* Facts Search Input */}
