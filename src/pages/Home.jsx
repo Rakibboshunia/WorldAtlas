@@ -99,8 +99,6 @@ export const Home = () => {
   return (
     <>
       <HeroSection />
-<<<<<<< HEAD
-
       {/* Features Bento */}
       <section className="max-w-[1400px] mx-auto px-6 lg:px-8 -mt-6 relative z-10 mb-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -112,7 +110,7 @@ export const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.12 }}
               whileHover={{ y: -8 }}
-              className={`relative rounded-2xl overflow-hidden p-6 text-center transition-all duration-300 bg-[rgba(9,20,40,0.85)] border ${f.border} ${f.hover}`}
+              className={`bento-card relative p-6 text-center transition-all duration-300 border ${f.border} ${f.hover}`}
             >
               {/* Top accent bar */}
               <div className={`absolute top-0 left-0 w-full h-[2px] ${f.bar}`} />
@@ -120,52 +118,12 @@ export const Home = () => {
               <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl text-white text-2xl mb-5 mx-auto ${f.iconCls}`}>
                 {f.icon}
               </div>
-              <h3 className="text-white font-bold text-lg mb-2 font-[family-name:var(--font-heading)]">
+              <h3 className="text-text-primary font-bold text-lg mb-2 font-heading">
                 {f.title}
               </h3>
-              <p className="text-sm leading-relaxed text-[#4a6280]">{f.desc}</p>
+              <p className="text-sm leading-relaxed text-text-muted">{f.desc}</p>
             </motion.div>
           ))}
-=======
-      {/* Premium Features Banner */}
-      <section className="features-banner-section container">
-        <div className="grid grid-three-cols">
-          <motion.div
-            className="feature-highlight-card bg-blue-box"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="feature-icon"><FaGlobe /></div>
-            <h3>250+ Nations</h3>
-            <p>Comprehensive data for every country and territory on Earth.</p>
-          </motion.div>
-
-          <motion.div
-            className="feature-highlight-card bg-green-box"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="feature-icon"><FaSearchLocation /></div>
-            <h3>Smart Filtering</h3>
-            <p>Instantly sort, search, and navigate through global geographic zones.</p>
-          </motion.div>
-
-          <motion.div
-            className="feature-highlight-card bg-yellow-box"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <div className="feature-icon"><FaChartPie /></div>
-            <h3>Live Demographics</h3>
-            <p>Access up-to-date population, currency, and border statistics.</p>
-          </motion.div>
->>>>>>> 747bd3e44af3ffebc9bde10947437c6d559a632d
         </div>
       </section>
 
@@ -175,7 +133,7 @@ export const Home = () => {
           <div className="mb-10">
             <span className="section-label">✦ Featured</span>
             <motion.h2
-              className="text-white font-bold font-[family-name:var(--font-heading)] text-[clamp(1.8rem,3vw,2.5rem)]"
+              className="text-text-primary font-bold font-heading text-[clamp(1.8rem,3vw,2.5rem)]"
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -198,7 +156,7 @@ export const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
-                className="flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 font-[family-name:var(--font-body)] text-[#60a5fa] border border-[rgba(59,130,246,0.25)] bg-[rgba(59,130,246,0.06)] hover:bg-[rgba(59,130,246,0.15)] hover:text-white hover:border-[rgba(59,130,246,0.5)]"
+                className="btn-ghost flex items-center gap-2 text-sm"
               >
                 View All Countries <FaArrowRight className="text-xs" />
               </motion.button>
@@ -211,7 +169,7 @@ export const Home = () => {
       <section className="max-w-[1400px] mx-auto px-6 lg:px-8 mb-24">
         <div className="mb-10">
           <span className="section-label">✦ Regions</span>
-          <h2 className="text-white font-bold font-[family-name:var(--font-heading)] text-[clamp(1.8rem,3vw,2.5rem)]">
+          <h2 className="text-text-primary font-bold font-heading text-[clamp(1.8rem,3vw,2.5rem)]">
             Explore by{" "}
             <span className="bg-[linear-gradient(135deg,#f59e0b,#f43f5e)] bg-clip-text text-transparent">
               Region
@@ -235,7 +193,7 @@ export const Home = () => {
                     {r.icon}
                   </div>
                   <div>
-                    <div className="font-bold text-white text-sm font-[family-name:var(--font-heading)]">
+                    <div className="font-bold text-text-primary text-sm font-heading">
                       {r.name}
                     </div>
                     <div className={`text-xs mt-0.5 ${r.textCls}`}>

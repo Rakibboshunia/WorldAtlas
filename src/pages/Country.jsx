@@ -94,14 +94,14 @@ export const Country = () => {
     setCountries(originalCountries); setCurrentPage(1);
   };
 
-  const navBtnCls = "px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed font-[family-name:var(--font-body)] bg-[rgba(9,20,40,0.8)] border border-[rgba(59,130,246,0.12)] text-[#8ba3c7] hover:border-[rgba(59,130,246,0.3)] hover:text-white";
+  const navBtnCls = "px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed font-body bento-card text-text-secondary hover:border-[rgba(59,130,246,0.3)] hover:text-text-primary";
 
   return (
     <section className="pb-20 pt-6">
       {/* Page Header */}
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8 mb-8">
         <span className="section-label">✦ Explorer</span>
-        <h1 className="font-bold text-white font-[family-name:var(--font-heading)] text-[clamp(2rem,4vw,3rem)]">
+        <h1 className="font-bold text-text-primary font-heading text-[clamp(2rem,4vw,3rem)]">
           Countries of the{" "}
           <span className="gradient-text">World</span>
         </h1>
@@ -115,16 +115,16 @@ export const Country = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1 }}
-            className={`flex items-center gap-4 p-4 rounded-2xl transition-all duration-300 bg-[rgba(9,20,40,0.85)] border ${s.border} ${s.hover}`}
+            className={`flex items-center gap-4 p-4 transition-all duration-300 bento-card border ${s.border} ${s.hover}`}
           >
             <div className={`flex items-center justify-center w-12 h-12 rounded-xl text-white text-xl flex-shrink-0 ${s.iconCls}`}>
               {s.icon}
             </div>
             <div>
-              <span className="font-bold uppercase tracking-wider block text-[#4a6280] text-[0.6rem]">
+              <span className="font-bold uppercase tracking-wider block text-text-muted text-[0.6rem]">
                 {s.label}
               </span>
-              <span className="text-white text-2xl font-bold font-[family-name:var(--font-heading)]">
+              <span className="text-text-primary text-2xl font-bold font-heading">
                 {statValues[s.key]}
               </span>
             </div>
@@ -151,10 +151,10 @@ export const Country = () => {
       {totalFilteredCount === 0 ? (
         <div className="max-w-[1400px] mx-auto px-6 lg:px-8 text-center py-24">
           <div className="text-6xl mb-4">🌍</div>
-          <p className="text-lg mb-2 font-semibold text-white font-[family-name:var(--font-heading)]">
+          <p className="text-lg mb-2 font-semibold text-text-primary font-heading">
             No countries found
           </p>
-          <p className="text-sm mb-6 text-[#4a6280]">
+          <p className="text-sm mb-6 text-text-muted">
             Try adjusting your search or filters.
           </p>
           <button onClick={handleReset} className="btn-primary">
@@ -213,10 +213,10 @@ export const Country = () => {
                       <button
                         key={page}
                         onClick={() => handlePageChange(page)}
-                        className={`w-9 h-9 rounded-xl text-xs font-semibold transition-all duration-200 font-[family-name:var(--font-body)] ${
+                        className={`w-9 h-9 rounded-xl text-xs font-semibold transition-all duration-200 font-body ${
                           currentPage === page
                             ? "bg-[linear-gradient(135deg,#3b82f6,#6d28d9)] text-white border border-[rgba(59,130,246,0.5)] shadow-[0_0_16px_rgba(59,130,246,0.4)]"
-                            : "bg-[rgba(9,20,40,0.8)] text-[#8ba3c7] border border-[rgba(59,130,246,0.1)] hover:border-[rgba(59,130,246,0.3)] hover:text-white"
+                            : "bento-card text-text-secondary hover:border-[rgba(59,130,246,0.3)] hover:text-white"
                         }`}
                       >
                         {page}
@@ -239,7 +239,7 @@ export const Country = () => {
                 <select
                   value={itemsPerPage}
                   onChange={(e) => { setItemsPerPage(Number(e.target.value)); setCurrentPage(1); }}
-                  className="px-2 py-1 rounded-lg outline-none font-[family-name:var(--font-body)] bg-[rgba(9,20,40,0.8)] border border-[rgba(59,130,246,0.12)] text-[#8ba3c7]"
+                  className="px-2 py-1 rounded-lg outline-none font-body bento-card text-text-secondary"
                 >
                   {[12, 24, 48, 96].map((n) => (
                     <option key={n} value={n} className="bg-[#050e1f]">

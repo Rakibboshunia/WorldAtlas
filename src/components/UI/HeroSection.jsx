@@ -85,9 +85,9 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="mb-6 leading-[1.05] font-[family-name:var(--font-heading)] text-[clamp(3.2rem,7vw,6.5rem)] font-bold tracking-[-0.03em]"
+            className="mb-6 leading-[1.05] font-heading text-[clamp(3.2rem,7vw,6.5rem)] font-bold tracking-[-0.03em]"
           >
-            <span className="text-white">Explore</span>{" "}
+            <span className="text-text-primary">Explore</span>{" "}
             <span className="shimmer-text">Every Nation</span>
             <br />
             <span className="text-white">on Earth.</span>
@@ -95,7 +95,7 @@ export const HeroSection = () => {
 
           {/* Sub-text */}
           <motion.p
-            className="mb-10 leading-relaxed text-[clamp(1rem,2vw,1.15rem)] max-w-[560px] text-[#8ba3c7] font-[family-name:var(--font-body)]"
+            className="mb-10 leading-relaxed text-[clamp(1rem,2vw,1.15rem)] max-w-[560px] text-text-secondary font-body"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -148,10 +148,10 @@ export const HeroSection = () => {
               >
                 <span className={`text-[1.2rem] ${s.color}`}>{s.icon}</span>
                 <div>
-                  <div className="font-bold text-white text-xl leading-none font-[family-name:var(--font-heading)]">
+                  <div className="font-bold text-text-primary text-xl leading-none font-heading">
                     {s.value}
                   </div>
-                  <div className="text-xs mt-0.5 text-[#4a6280] font-semibold tracking-[0.06em]">
+                  <div className="text-xs mt-0.5 text-text-muted font-semibold tracking-[0.06em]">
                     {s.label}
                   </div>
                 </div>

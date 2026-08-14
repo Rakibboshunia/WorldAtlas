@@ -61,16 +61,15 @@ export const Contact = () => {
       {/* Header */}
       <div className="text-center mb-14">
         <span className="section-label justify-center mx-auto">✦ Contact</span>
-        <h1 className="text-white font-bold mb-3 font-[family-name:var(--font-heading)] text-[clamp(2rem,4vw,3rem)]">
+        <h1 className="text-text-primary font-bold mb-3 font-heading text-[clamp(2rem,4vw,3rem)]">
           Get in{" "}
           <span className="gradient-text">Touch</span>
         </h1>
-        <p className="text-sm max-w-md mx-auto text-[#4a6280]">
+        <p className="text-sm max-w-md mx-auto text-text-muted">
           Have a question or just want to say hello? We'd love to hear from you.
         </p>
       </div>
 
-<<<<<<< HEAD
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
         {/* Left Panel */}
         <div className="lg:col-span-2 flex flex-col gap-4">
@@ -78,13 +77,13 @@ export const Contact = () => {
             <motion.div
               key={title}
               whileHover={{ x: 4 }}
-              className={`flex items-center gap-4 p-4 rounded-2xl transition-all duration-300 bg-[rgba(9,20,40,0.8)] border ${cardBorder}`}
+              className={`flex items-center gap-4 p-4 transition-all duration-300 bento-card border ${cardBorder}`}
             >
               <div className={`flex items-center justify-center w-10 h-10 rounded-xl text-base flex-shrink-0 ${cls}`}>
                 {icon}
               </div>
               <div>
-                <p className="text-xs font-bold uppercase tracking-wider mb-0.5 text-[#4a6280]">
+                <p className="text-xs font-bold uppercase tracking-wider mb-0.5 text-text-muted">
                   {title}
                 </p>
                 <p className="text-slate-200 text-sm font-medium">{value}</p>
@@ -98,7 +97,7 @@ export const Contact = () => {
               <RiEarthLine className="text-[#3b82f6] text-[1.1rem]" />
               <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">WorldAtlas</span>
             </div>
-            <p className="text-sm leading-relaxed italic text-[#8ba3c7]">
+            <p className="text-sm leading-relaxed italic text-text-secondary">
               "We typically respond within 24 hours. Your message matters to us!"
             </p>
           </div>
@@ -113,63 +112,33 @@ export const Contact = () => {
                 rel="noopener noreferrer"
                 aria-label={label}
                 whileHover={{ y: -4, scale: 1.1 }}
-                className={`flex items-center justify-center w-10 h-10 rounded-xl text-base transition-all duration-300 bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.07)] text-[#4a6280] ${hoverCls}`}
+                className={`flex items-center justify-center w-10 h-10 rounded-xl text-base transition-all duration-300 bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.07)] text-text-muted ${hoverCls}`}
               >
                 {icon}
               </motion.a>
             ))}
           </div>
         </div>
-=======
-      <div className="contact-wrapper container">
-        <form ref={formRef} onSubmit={handleFormSubmit}>
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Enter your name."
-            name="username"
-            required
-            autoComplete="off"
-          />
-
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Enter your email."
-            name="email"
-            required
-            autoComplete="off"
-          />
-
-          <textarea
-            className="form-control"
-            rows="8"
-            placeholder="Enter your message."
-            name="message"
-            required
-            autoComplete="off"
-          ></textarea>
->>>>>>> 747bd3e44af3ffebc9bde10947437c6d559a632d
 
         {/* Form */}
         <motion.form
           ref={formRef}
           onSubmit={handleFormSubmit}
-          className="lg:col-span-3 flex flex-col gap-4 p-6 rounded-2xl bg-[rgba(9,20,40,0.85)] border border-[rgba(59,130,246,0.12)] backdrop-blur-[14px]"
+          className="lg:col-span-3 flex flex-col gap-4 p-6 bento-card"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="font-bold text-white text-lg mb-1 font-[family-name:var(--font-heading)]">
+          <h3 className="font-bold text-text-primary text-lg mb-1 font-heading">
             Send a Message
           </h3>
-          <p className="text-xs mb-2 text-[#4a6280]">
+          <p className="text-xs mb-2 text-text-muted">
             Fill in the form and we'll reach out to you shortly.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider mb-1.5 text-[#4a6280] font-[family-name:var(--font-body)]">
+              <label className="block text-xs font-bold uppercase tracking-wider mb-1.5 text-text-muted font-body">
                 Your Name
               </label>
               <input
@@ -182,7 +151,7 @@ export const Contact = () => {
               />
             </div>
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider mb-1.5 text-[#4a6280] font-[family-name:var(--font-body)]">
+              <label className="block text-xs font-bold uppercase tracking-wider mb-1.5 text-text-muted font-body">
                 Email Address
               </label>
               <input
@@ -197,7 +166,7 @@ export const Contact = () => {
           </div>
 
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider mb-1.5 text-[#4a6280] font-[family-name:var(--font-body)]">
+            <label className="block text-xs font-bold uppercase tracking-wider mb-1.5 text-text-muted font-body">
               Message
             </label>
             <textarea

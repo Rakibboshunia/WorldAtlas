@@ -28,7 +28,7 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
         whileHover={{ x: 3 }}
       >
         <div
-          className="flex items-center gap-0 rounded-2xl overflow-hidden transition-all duration-300 group bg-[rgba(9,20,40,0.8)] border border-[rgba(59,130,246,0.08)] hover:border-[rgba(59,130,246,0.35)] hover:shadow-[0_0_30px_rgba(59,130,246,0.1),0_10px_30px_rgba(0,0,0,0.3)]"
+          className="flex items-center gap-0 rounded-2xl overflow-hidden transition-all duration-300 group bento-card hover:border-[rgba(59,130,246,0.35)] hover:shadow-[0_0_30px_rgba(59,130,246,0.1),0_10px_30px_rgba(0,0,0,0.3)]"
         >
           {/* Flag */}
           <div className="w-36 h-24 flex-shrink-0 overflow-hidden relative">
@@ -45,7 +45,7 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
           {/* Content */}
           <div className="flex flex-1 items-center gap-6 py-3 px-5 flex-wrap">
             <span
-              className="font-bold text-white text-base min-w-[9rem] font-[family-name:var(--font-heading)]"
+              className="font-bold text-text-primary text-base min-w-[9rem] font-heading"
               title={name.common}
             >
               {name.common.length > 22 ? name.common.slice(0, 20) + "…" : name.common}
@@ -53,15 +53,15 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
 
             <div className="flex gap-6 flex-1 flex-wrap text-xs">
               <div>
-                <span className="block font-bold uppercase tracking-wider mb-0.5 text-[#4a6280] text-[0.65rem]">Population</span>
+                <span className="block font-bold uppercase tracking-wider mb-0.5 text-text-muted text-[0.65rem]">Population</span>
                 <span className="text-slate-300 font-medium">{population.toLocaleString()}</span>
               </div>
               <div>
-                <span className="block font-bold uppercase tracking-wider mb-0.5 text-[#4a6280] text-[0.65rem]">Capital</span>
+                <span className="block font-bold uppercase tracking-wider mb-0.5 text-text-muted text-[0.65rem]">Capital</span>
                 <span className="text-slate-300 font-medium">{capital?.[0] || "N/A"}</span>
               </div>
               <div>
-                <span className="block font-bold uppercase tracking-wider mb-0.5 text-[#4a6280] text-[0.65rem]">Region</span>
+                <span className="block font-bold uppercase tracking-wider mb-0.5 text-text-muted text-[0.65rem]">Region</span>
                 <span className={`pill-badge text-[0.6rem] border ${rs}`}>
                   {region}
                 </span>
@@ -70,7 +70,7 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
 
             <NavLink to={`/country/${name.common}`}>
               <button
-                className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 bg-[rgba(59,130,246,0.08)] border border-[rgba(59,130,246,0.2)] text-[#60a5fa] font-[family-name:var(--font-body)] hover:bg-[rgba(59,130,246,0.2)] hover:text-white"
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 bg-[rgba(59,130,246,0.08)] border border-[rgba(59,130,246,0.2)] text-[#60a5fa] font-body hover:bg-[rgba(59,130,246,0.2)] hover:text-white"
               >
                 Details <FaArrowRight className="text-[0.6rem]" />
               </button>
@@ -90,7 +90,7 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
       whileHover={{ y: -7 }}
     >
       <div
-        className="rounded-2xl overflow-hidden h-full flex flex-col transition-all duration-300 group relative bg-[rgba(9,20,40,0.85)] border border-[rgba(59,130,246,0.08)] hover:border-[rgba(59,130,246,0.4)] hover:shadow-[0_0_0_1px_rgba(59,130,246,0.15),0_25px_60px_rgba(59,130,246,0.12),0_10px_30px_rgba(0,0,0,0.4)]"
+        className="rounded-2xl overflow-hidden h-full flex flex-col transition-all duration-300 group relative bento-card hover:border-[rgba(59,130,246,0.4)] hover:shadow-[0_0_0_1px_rgba(59,130,246,0.15),0_25px_60px_rgba(59,130,246,0.12),0_10px_30px_rgba(0,0,0,0.4)]"
       >
         {/* Flag */}
         <div className="relative h-48 overflow-hidden">
@@ -106,7 +106,7 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
           {/* Country name overlaid */}
           <div className="absolute bottom-0 left-0 right-0 p-3">
             <h3
-              className="text-white font-bold text-base truncate font-[family-name:var(--font-heading)] drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+              className="text-text-primary font-bold text-base truncate font-heading drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
               title={name.common}
             >
               {name.common}
@@ -134,7 +134,7 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
                 className="flex justify-between items-center py-1.5 border-b border-[rgba(59,130,246,0.06)]"
               >
                 <span
-                  className="text-xs font-bold uppercase tracking-wider text-[#4a6280] text-[0.62rem]"
+                  className="text-xs font-bold uppercase tracking-wider text-text-muted text-[0.62rem]"
                 >
                   {label}
                 </span>
@@ -145,7 +145,7 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
 
           <NavLink to={`/country/${name.common}`} className="mt-4 block">
             <button
-              className="w-full py-2.5 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-2 group/btn font-[family-name:var(--font-body)] bg-[rgba(59,130,246,0.08)] border border-[rgba(59,130,246,0.18)] text-[#60a5fa] hover:bg-[linear-gradient(135deg,#3b82f6_0%,#6d28d9_100%)] hover:text-white hover:border-transparent hover:shadow-[0_4px_15px_rgba(59,130,246,0.35)]"
+              className="w-full py-2.5 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-2 group/btn font-body bg-[rgba(59,130,246,0.08)] border border-[rgba(59,130,246,0.18)] text-[#60a5fa] hover:bg-[linear-gradient(135deg,#3b82f6_0%,#6d28d9_100%)] hover:text-white hover:border-transparent hover:shadow-[0_4px_15px_rgba(59,130,246,0.35)]"
             >
               View Details <FaArrowRight className="text-[0.6rem]" />
             </button>

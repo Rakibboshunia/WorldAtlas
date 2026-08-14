@@ -40,13 +40,12 @@ export const About = () => {
   });
 
   return (
-<<<<<<< HEAD
     <section className="max-w-[1400px] mx-auto px-6 lg:px-8 py-20">
       {/* Header */}
       <div className="text-center mb-12">
         <span className="section-label mx-auto justify-center">✦ World Facts</span>
         <motion.h2
-          className="text-white font-bold font-[family-name:var(--font-heading)] text-[clamp(2rem,3.5vw,2.8rem)]"
+          className="text-text-primary font-bold font-heading text-[clamp(2rem,3.5vw,2.8rem)]"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -56,7 +55,7 @@ export const About = () => {
           <span className="gradient-text">We're Proud Of</span>
         </motion.h2>
         <motion.p
-          className="text-sm mt-4 max-w-md mx-auto text-[#4a6280]"
+          className="text-sm mt-4 max-w-md mx-auto text-text-muted"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -65,14 +64,6 @@ export const About = () => {
           Fascinating trivia, capitals, and unique details about nations across the globe.
         </motion.p>
       </div>
-=======
-    <section className="section-about container">
-      <h2 className="container-title">
-        Here are the Interesting Facts
-        <br />
-        We’re proud of
-      </h2>
->>>>>>> 747bd3e44af3ffebc9bde10947437c6d559a632d
 
       {/* Search */}
       <div className="relative max-w-xl mx-auto mb-10">
@@ -98,7 +89,7 @@ export const About = () => {
       {filteredFacts.length === 0 ? (
         <div className="text-center py-20">
           <div className="text-5xl mb-4">🔍</div>
-          <p className="text-sm text-[#4a6280]">
+          <p className="text-sm text-text-muted">
             No facts match your search. Try another query!
           </p>
         </div>
@@ -115,12 +106,12 @@ export const About = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: idx * 0.04 }}
                   whileHover={{ y: -7 }}
-                  className={`relative rounded-2xl overflow-hidden transition-all duration-300 bg-[rgba(9,20,40,0.85)] border ${accent.border} ${accent.hover}`}
+                  className={`bento-card relative transition-all duration-300 border ${accent.border} ${accent.hover}`}
                 >
                   {/* Top accent bar */}
                   <div className={`absolute top-0 left-0 w-full h-[2px] ${accent.bar}`} />
                   <div className="p-5 pt-6">
-                    <h3 className="text-white font-bold text-lg mb-4 font-[family-name:var(--font-heading)]">
+                    <h3 className="text-text-primary font-bold text-lg mb-4 font-heading">
                       {countryName}
                     </h3>
                     <div className="flex flex-col gap-2.5">
@@ -132,14 +123,14 @@ export const About = () => {
                           key={label}
                           className="flex justify-between items-center py-1.5 border-b border-[rgba(59,130,246,0.06)]"
                         >
-                          <span className="text-xs font-bold uppercase tracking-wider text-[#4a6280] text-[0.62rem]">
+                          <span className="text-xs font-bold uppercase tracking-wider text-text-muted text-[0.62rem]">
                             {label}
                           </span>
                           <span className="text-slate-300 text-sm font-medium">{value}</span>
                         </div>
                       ))}
                       <div className="pt-2">
-                        <span className="text-xs font-bold uppercase tracking-wider block mb-2 text-[#4a6280] text-[0.62rem]">
+                        <span className="text-xs font-bold uppercase tracking-wider block mb-2 text-text-muted text-[0.62rem]">
                           Interesting Fact
                         </span>
                         <p className="text-sm leading-relaxed italic text-[#8ba3c7]">
