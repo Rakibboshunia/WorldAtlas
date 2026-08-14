@@ -209,7 +209,7 @@ export const Country = () => {
                         </span>
                       );
                     }
-                    elements.push(
+                    elements. push(
                       <button
                         key={page}
                         onClick={() => handlePageChange(page)}

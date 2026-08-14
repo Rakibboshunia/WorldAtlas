@@ -40,6 +40,7 @@ export const About = () => {
   });
 
   return (
+<<<<<<< HEAD
     <section className="max-w-[1400px] mx-auto px-6 lg:px-8 py-20">
       {/* Header */}
       <div className="text-center mb-12">
@@ -64,6 +65,14 @@ export const About = () => {
           Fascinating trivia, capitals, and unique details about nations across the globe.
         </motion.p>
       </div>
+=======
+    <section className="section-about container">
+      <h2 className="container-title">
+        Here are the Interesting Facts
+        <br />
+        We’re proud of
+      </h2>
+>>>>>>> 747bd3e44af3ffebc9bde10947437c6d559a632d
 
       {/* Search */}
       <div className="relative max-w-xl mx-auto mb-10">

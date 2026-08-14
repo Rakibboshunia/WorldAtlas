@@ -70,6 +70,7 @@ export const Contact = () => {
         </p>
       </div>
 
+<<<<<<< HEAD
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
         {/* Left Panel */}
         <div className="lg:col-span-2 flex flex-col gap-4">
@@ -119,6 +120,36 @@ export const Contact = () => {
             ))}
           </div>
         </div>
+=======
+      <div className="contact-wrapper container">
+        <form ref={formRef} onSubmit={handleFormSubmit}>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Enter your name."
+            name="username"
+            required
+            autoComplete="off"
+          />
+
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter your email."
+            name="email"
+            required
+            autoComplete="off"
+          />
+
+          <textarea
+            className="form-control"
+            rows="8"
+            placeholder="Enter your message."
+            name="message"
+            required
+            autoComplete="off"
+          ></textarea>
+>>>>>>> 747bd3e44af3ffebc9bde10947437c6d559a632d
 
         {/* Form */}
         <motion.form

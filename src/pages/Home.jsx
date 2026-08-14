@@ -99,6 +99,7 @@ export const Home = () => {
   return (
     <>
       <HeroSection />
+<<<<<<< HEAD
 
       {/* Features Bento */}
       <section className="max-w-[1400px] mx-auto px-6 lg:px-8 -mt-6 relative z-10 mb-20">
@@ -125,6 +126,46 @@ export const Home = () => {
               <p className="text-sm leading-relaxed text-[#4a6280]">{f.desc}</p>
             </motion.div>
           ))}
+=======
+      {/* Premium Features Banner */}
+      <section className="features-banner-section container">
+        <div className="grid grid-three-cols">
+          <motion.div
+            className="feature-highlight-card bg-blue-box"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="feature-icon"><FaGlobe /></div>
+            <h3>250+ Nations</h3>
+            <p>Comprehensive data for every country and territory on Earth.</p>
+          </motion.div>
+
+          <motion.div
+            className="feature-highlight-card bg-green-box"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <div className="feature-icon"><FaSearchLocation /></div>
+            <h3>Smart Filtering</h3>
+            <p>Instantly sort, search, and navigate through global geographic zones.</p>
+          </motion.div>
+
+          <motion.div
+            className="feature-highlight-card bg-yellow-box"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <div className="feature-icon"><FaChartPie /></div>
+            <h3>Live Demographics</h3>
+            <p>Access up-to-date population, currency, and border statistics.</p>
+          </motion.div>
+>>>>>>> 747bd3e44af3ffebc9bde10947437c6d559a632d
         </div>
       </section>
 
