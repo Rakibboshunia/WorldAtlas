@@ -1,25 +1,37 @@
-
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "https://restcountries.com/v3.1",
-});
+const DATA_URL = "https://files-03.restcountries.com/countries.00/legacy.json";
+
+let cachedData = null;
+
+const fetchAllCountries = async () => {
+  if (cachedData) return cachedData;
+  const res = await axios.get(DATA_URL);
+  cachedData = res.data;
+  return cachedData;
+};
 
 // HTTP GET METHOD
-export const getCountryData = () => {
-  return api.get("/all?fields=name,population,region,capital,flags");
+export const getCountryData = async () => {
+  const data = await fetchAllCountries();
+  return { data };
 };
 
 // HTTP GET METHOD fro the indvi. country name
-export const getCountryIndData = (name) => {
-  return api.get(
-    `/name/${name}?fullText=true&fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags`
+export const getCountryIndData = async (name) => {
+  const data = await fetchAllCountries();
+  const country = data.find(
+    (c) => c.name?.common?.toLowerCase() === name.toLowerCase() ||
+           c.name?.official?.toLowerCase() === name.toLowerCase()
   );
+  return { data: country ? [country] : [] };
 };
 
 // HTTP GET METHOD for multiple country codes (border countries)
-export const getCountriesByCodes = (codes) => {
-  return api.get(
-    `/alpha?codes=${codes.join(",")}&fields=name,flags`
+export const getCountriesByCodes = async (codes) => {
+  const data = await fetchAllCountries();
+  const borders = data.filter((c) =>
+    c.cca3 && codes.includes(c.cca3)
   );
+  return { data: borders };
 };
