@@ -1,10 +1,10 @@
-import { NavLink, useRouteError } from "react-router-dom";
+"use client";
+import Link from "next/link";
 import { FaHome } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { RiEarthLine } from "react-icons/ri";
 
-export const ErrorPage = () => {
-  const error = useRouteError();
+export const ErrorPage = ({ error }) => {
   console.error("Route Error:", error);
 
   return (
@@ -63,7 +63,7 @@ export const ErrorPage = () => {
           </div>
         )}
 
-        <NavLink to="/">
+        <Link href="/">
           <motion.button
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.97 }}
@@ -71,13 +71,13 @@ export const ErrorPage = () => {
           >
             <FaHome /> Back to Home
           </motion.button>
-        </NavLink>
+        </Link>
 
         <p className="text-xs mt-4 text-[#2e4060]">
           Or explore our{" "}
-          <NavLink to="/country" className="transition-colors text-[#3b82f6] hover:text-[#60a5fa]">
+          <Link href="/country" className="transition-colors text-[#3b82f6] hover:text-[#60a5fa]">
             Country Explorer
-          </NavLink>
+          </Link>
         </p>
       </motion.div>
     </div>

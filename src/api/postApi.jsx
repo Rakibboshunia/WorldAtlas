@@ -1,13 +1,23 @@
 import axios from "axios";
 
-const DATA_URL = "https://files-03.restcountries.com/countries.00/legacy.json";
+const DATA_URL = "https://restcountries.com/v3.1/all";
+const FALLBACK_URL = "https://files-03.restcountries.com/countries.00/legacy.json";
 
 let cachedData = null;
 
 const fetchAllCountries = async () => {
   if (cachedData) return cachedData;
-  const res = await axios.get(DATA_URL);
-  cachedData = res.data;
+  try {
+    const res = await axios.get(DATA_URL, { timeout: 8000 });
+    cachedData = Array.isArray(res.data) ? res.data : [];
+  } catch {
+    try {
+      const res = await axios.get(FALLBACK_URL, { timeout: 8000 });
+      cachedData = Array.isArray(res.data) ? res.data : [];
+    } catch {
+      cachedData = [];
+    }
+  }
   return cachedData;
 };
 
@@ -17,7 +27,7 @@ export const getCountryData = async () => {
   return { data };
 };
 
-// HTTP GET METHOD fro the indvi. country name
+// HTTP GET METHOD for the individual country name
 export const getCountryIndData = async (name) => {
   const data = await fetchAllCountries();
   const country = data.find(

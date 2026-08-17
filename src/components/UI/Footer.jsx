@@ -1,10 +1,11 @@
+"use client";
 import footerContact from "../../api/footerApi.json";
 import { IoCallSharp } from "react-icons/io5";
 import { MdPlace } from "react-icons/md";
 import { TbMailPlus } from "react-icons/tb";
 import { FaGithub, FaTwitter, FaLinkedinIn, FaDribbble } from "react-icons/fa";
 import { RiEarthLine } from "react-icons/ri";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -65,7 +66,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[rgba(59,130,246,0.06)]">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <NavLink to="/" className="flex items-center gap-2.5 mb-5 group">
+            <Link href="/" className="flex items-center gap-2.5 mb-5 group">
               <div className="flex items-center justify-center w-9 h-9 rounded-xl transition-all duration-300 bg-[linear-gradient(135deg,#3b82f6_0%,#8b5cf6_100%)] shadow-[0_0_18px_rgba(59,130,246,0.35)]">
                 <RiEarthLine className="text-white text-xl" />
               </div>
@@ -75,7 +76,7 @@ const Footer = () => {
                   Atlas
                 </span>
               </span>
-            </NavLink>
+            </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-xs text-[#4a6280]">
               Your premium guide to exploring every nation, territory, and culture on Earth. Data-driven world exploration.
             </p>
@@ -104,13 +105,13 @@ const Footer = () => {
             <ul className="flex flex-col gap-2.5">
               {quickLinks.map(({ to, label }) => (
                 <li key={to}>
-                  <NavLink
-                    to={to}
+                  <Link
+                    href={to}
                     className="text-sm transition-all duration-200 flex items-center gap-2 group text-[#4a6280] hover:text-[#3b82f6]"
                   >
                     <span className="w-1 h-1 rounded-full transition-all duration-200 bg-[#3b82f6]/20 group-hover:bg-[#3b82f6]" />
                     {label}
-                  </NavLink>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -167,13 +168,13 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6">
           <p className="text-xs text-[#2e4060]">
             © {new Date().getFullYear()} WorldAtlas. Crafted with ❤️ by{" "}
-            <NavLink
-              to="https://github.com/Rakibboshunia"
+            <Link
+              href="https://github.com/Rakibboshunia"
               target="_blank"
               className="font-semibold transition-colors text-[#3b82f6] hover:text-[#60a5fa]"
             >
               Boshunia
-            </NavLink>
+            </Link>
           </p>
           <p className="text-xs text-[#2e4060]">
             Data powered by{" "}

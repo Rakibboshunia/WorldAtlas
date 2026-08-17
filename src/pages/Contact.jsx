@@ -1,3 +1,4 @@
+"use client";
 import toast from "react-hot-toast";
 import { useRef } from "react";
 import { FaPaperPlane, FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";

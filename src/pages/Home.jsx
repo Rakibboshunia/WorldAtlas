@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { HeroSection } from "../components/UI/HeroSection";
 import { About } from "./About";
@@ -8,7 +9,7 @@ import {
   FaGlobe, FaSearchLocation, FaChartPie, FaArrowRight,
   FaMountain, FaWater, FaCity,
 } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 const features = [
   {
@@ -80,14 +81,15 @@ export const Home = () => {
     const fetchFeatured = async () => {
       try {
         const res = await getCountryData();
+        const countries = Array.isArray(res.data) ? res.data : [];
         const interestingNames = ["Japan", "Switzerland", "Brazil", "Australia"];
-        const interestingCountries = res.data.filter((c) =>
-          interestingNames.includes(c.name.common)
+        const interestingCountries = countries.filter((c) =>
+          interestingNames.includes(c.name?.common)
         );
         setFeatured(
           interestingCountries.length > 0
             ? interestingCountries
-            : res.data.slice(0, 4)
+            : countries.slice(0, 4)
         );
       } catch (err) {
         console.error("Failed to load featured countries:", err);
@@ -152,7 +154,7 @@ export const Home = () => {
           </ul>
 
           <div className="flex justify-center mt-10">
-            <NavLink to="/country">
+            <Link href="/country">
               <motion.button
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
@@ -160,7 +162,7 @@ export const Home = () => {
               >
                 View All Countries <FaArrowRight className="text-xs" />
               </motion.button>
-            </NavLink>
+            </Link>
           </div>
         </section>
       )}
@@ -187,7 +189,7 @@ export const Home = () => {
               transition={{ duration: 0.4, delay: i * 0.08 }}
               whileHover={{ y: -6 }}
             >
-              <NavLink to={`/country?region=${r.name}`}>
+              <Link href={`/country?region=${r.name}`}>
                 <div className={`flex flex-col items-center justify-center gap-3 p-6 rounded-2xl text-center cursor-pointer transition-all duration-300 border ${r.cls}`}>
                   <div className={`flex items-center justify-center w-12 h-12 rounded-xl text-xl ${r.iconCls}`}>
                     {r.icon}
@@ -201,7 +203,7 @@ export const Home = () => {
                     </div>
                   </div>
                 </div>
-              </NavLink>
+              </Link>
             </motion.div>
           ))}
         </div>

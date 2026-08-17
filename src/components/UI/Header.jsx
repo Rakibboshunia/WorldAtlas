@@ -1,4 +1,6 @@
-import { NavLink } from "react-router-dom";
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSunnyOutline, IoMoonOutline, IoClose } from "react-icons/io5";
 import { useState, useEffect } from "react";
@@ -6,11 +8,16 @@ import { RiEarthLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
+  const pathname = usePathname();
   const [show, setShow] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "dark";
-  });
+  const [isMounted, setIsMounted] = useState(false);
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    setIsMounted(true);
+    setTheme(localStorage.getItem("theme") || "dark");
+  }, []);
 
   useEffect(() => {
     if (theme === "light") {
@@ -47,8 +54,8 @@ const Header = () => {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-[4.5rem]">
           {/* Logo */}
-          <NavLink
-            to="/"
+          <Link
+            href="/"
             className="flex items-center gap-2.5 group"
             onClick={() => setShow(false)}
           >
@@ -61,37 +68,33 @@ const Header = () => {
                 Atlas
               </span>
             </span>
-          </NavLink>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-1">
-            {navLinks.map(({ to, label }) => (
-              <NavLink
-                key={to}
-                to={to}
-                end={to === "/"}
-                className={({ isActive }) =>
-                  `relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+            {navLinks.map(({ to, label }) => {
+              const isActive = pathname === to || (to !== "/" && pathname.startsWith(to));
+              return (
+                <Link
+                  key={to}
+                  href={to}
+                  className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
                     isActive
                       ? "text-blue-400 nav-active"
                       : "text-slate-400 hover:text-white hover:bg-white/5"
-                  }`
-                }
-              >
-                {({ isActive }) => (
-                  <>
-                    {label}
-                    {isActive && (
-                      <motion.span
-                        layoutId="nav-indicator"
-                        className="absolute inset-0 rounded-xl bg-[rgba(59,130,246,0.1)] border border-[rgba(59,130,246,0.2)]"
-                        transition={{ type: "spring", bounce: 0.2, duration: 0.5 }}
-                      />
-                    )}
-                  </>
-                )}
-              </NavLink>
-            ))}
+                  }`}
+                >
+                  {label}
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-indicator"
+                      className="absolute inset-0 rounded-xl bg-[rgba(59,130,246,0.1)] border border-[rgba(59,130,246,0.2)]"
+                      transition={{ type: "spring", bounce: 0.2, duration: 0.5 }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Actions */}
@@ -111,7 +114,7 @@ const Header = () => {
                 transition={{ duration: 0.3 }}
                 className="text-base"
               >
-                {theme === "dark" ? <IoSunnyOutline /> : <IoMoonOutline />}
+                {isMounted ? (theme === "dark" ? <IoSunnyOutline /> : <IoMoonOutline />) : <IoSunnyOutline />}
               </motion.span>
             </motion.button>
 
@@ -151,29 +154,29 @@ const Header = () => {
             className="md:hidden overflow-hidden bg-[rgba(2,9,23,0.97)] backdrop-blur-2xl border-t border-[rgba(59,130,246,0.1)]"
           >
             <nav className="flex flex-col py-4 px-6 gap-1">
-              {navLinks.map(({ to, label }, i) => (
-                <motion.div
-                  key={to}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.06 }}
-                >
-                  <NavLink
-                    to={to}
-                    end={to === "/"}
-                    onClick={() => setShow(false)}
-                    className={({ isActive }) =>
-                      `block px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
+              {navLinks.map(({ to, label }, i) => {
+                const isActive = pathname === to || (to !== "/" && pathname.startsWith(to));
+                return (
+                  <motion.div
+                    key={to}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.06 }}
+                  >
+                    <Link
+                      href={to}
+                      onClick={() => setShow(false)}
+                      className={`block px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
                         isActive
                           ? "text-blue-400 bg-blue-500/10 border border-blue-500/20"
                           : "text-slate-400 hover:text-white hover:bg-white/5"
-                      }`
-                    }
-                  >
-                    {label}
-                  </NavLink>
-                </motion.div>
-              ))}
+                      }`}
+                    >
+                      {label}
+                    </Link>
+                  </motion.div>
+                );
+              })}
             </nav>
           </motion.div>
         )}

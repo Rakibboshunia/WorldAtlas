@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+"use client";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -68,13 +69,13 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
               </div>
             </div>
 
-            <NavLink to={`/country/${name.common}`}>
+            <Link href={`/country/${name.common}`}>
               <button
                 className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 bg-[rgba(59,130,246,0.08)] border border-[rgba(59,130,246,0.2)] text-[#60a5fa] font-body hover:bg-[rgba(59,130,246,0.2)] hover:text-white"
               >
                 Details <FaArrowRight className="text-[0.6rem]" />
               </button>
-            </NavLink>
+            </Link>
           </div>
         </div>
       </motion.li>
@@ -143,13 +144,13 @@ export const CountryCard = ({ country, viewMode = "grid" }) => {
             ))}
           </div>
 
-          <NavLink to={`/country/${name.common}`} className="mt-4 block">
+          <Link href={`/country/${name.common}`} className="mt-4 block">
             <button
               className="w-full py-2.5 rounded-xl text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-2 group/btn font-body bg-[rgba(59,130,246,0.08)] border border-[rgba(59,130,246,0.18)] text-[#60a5fa] hover:bg-[linear-gradient(135deg,#3b82f6_0%,#6d28d9_100%)] hover:text-white hover:border-transparent hover:shadow-[0_4px_15px_rgba(59,130,246,0.35)]"
             >
               View Details <FaArrowRight className="text-[0.6rem]" />
             </button>
-          </NavLink>
+          </Link>
         </div>
       </div>
     </motion.li>

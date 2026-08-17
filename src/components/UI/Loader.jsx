@@ -1,3 +1,4 @@
+"use client";
 import { RiEarthLine } from "react-icons/ri";
 import { motion } from "framer-motion";
 

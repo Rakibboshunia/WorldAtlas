@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+"use client";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaArrowRight, FaGlobeAmericas, FaUsers, FaMapMarkedAlt } from "react-icons/fa";
 import { RiEarthLine } from "react-icons/ri";
@@ -111,7 +112,7 @@ export const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.45 }}
           >
-            <NavLink to="/country">
+            <Link href="/country">
               <motion.button
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
@@ -119,8 +120,8 @@ export const HeroSection = () => {
               >
                 Start Exploring <FaArrowRight className="text-xs" />
               </motion.button>
-            </NavLink>
-            <NavLink to="/about">
+            </Link>
+            <Link href="/about">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
@@ -128,7 +129,7 @@ export const HeroSection = () => {
               >
                 World Facts
               </motion.button>
-            </NavLink>
+            </Link>
           </motion.div>
 
           {/* Stats */}

@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import countryFacts from "../api/countryData.json";
 import { motion } from "framer-motion";

@@ -1,5 +1,7 @@
+"use client";
 import { useEffect, useState, useTransition } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import { getCountryIndData, getCountriesByCodes } from "../../api/postApi";
 import { Loader } from "../UI/Loader";
 import { FaArrowLeft, FaExternalLinkAlt, FaGlobeAmericas, FaUsers, FaLanguage, FaMoneyBillWave } from "react-icons/fa";
@@ -116,7 +118,7 @@ export const CountryDetails = () => {
     <section className="max-w-[1400px] mx-auto px-6 lg:px-8 py-8 pb-24">
       {/* Back Button */}
       <div className="mb-8">
-        <NavLink to="/country">
+        <Link href="/country">
           <motion.button
             whileHover={{ x: -4 }}
             whileTap={{ scale: 0.97 }}
@@ -124,7 +126,7 @@ export const CountryDetails = () => {
           >
             <FaArrowLeft className="text-xs" /> Back to Countries
           </motion.button>
-        </NavLink>
+        </Link>
       </div>
 
       {/* Hero Flag Banner */}
@@ -224,7 +226,7 @@ export const CountryDetails = () => {
         {borderCountries.length > 0 ? (
           <div className="flex flex-wrap gap-2.5">
             {borderCountries.map((border) => (
-              <NavLink key={border.name.common} to={`/country/${border.name.common}`}>
+              <Link key={border.name.common} href={`/country/${border.name.common}`}>
                 <motion.div
                   whileHover={{ y: -3, scale: 1.05 }}
                   className="flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-200 cursor-pointer bg-[rgba(59,130,246,0.06)] border border-[rgba(59,130,246,0.15)] hover:bg-[rgba(59,130,246,0.15)] hover:border-[rgba(59,130,246,0.4)] hover:shadow-[0_0_15px_rgba(59,130,246,0.2)]"
@@ -238,7 +240,7 @@ export const CountryDetails = () => {
                     {border.name.common}
                   </span>
                 </motion.div>
-              </NavLink>
+              </Link>
             ))}
           </div>
         ) : (
